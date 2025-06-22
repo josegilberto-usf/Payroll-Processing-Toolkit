@@ -3,6 +3,7 @@ let employees = [
     { name: "Alice", hourlyRate: 20, hoursWorked: 40 },
     { name: "Bob", hourlyRate: 25, hoursWorked: 35 },
     { name: "Charlie", hourlyRate: 30, hoursWorked: 45 }
+    { name: "Dana", hourlyRate: 22, hoursWorked: 60 },
 ];
 
 // Step 3: Calculate Base Pay
