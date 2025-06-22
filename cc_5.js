@@ -23,10 +23,10 @@ function calculateNetPay(grossPay) {
 // Step 6: Calculate Process Payroll
 function processPayroll(employee) {
    let name = employee.name;
-   let basePay = calculateBasePay(employee.hourlyRate, employee.hoursWorked);
-   let overtimePay = calculateOvertimePay(employee.hourlyRate, employee.hoursWorked);
-   let grossPay = basePay + overtimePay;
-   let netPay = calculateNetPay(grossPay);
+   let basePay = calculateBasePay(employee.hourlyRate, employee.hoursWorked); // Base pay for 40 hours or less
+   let overtimePay = calculateOvertimePay(employee.hourlyRate, employee.hoursWorked); // Overtime pay for hours over 40
+   let grossPay = basePay + overtimePay; // Gross pay is base pay plus overtime pay
+   let netPay = calculateNetPay(grossPay); // Net pay after tax deduction
    return { name, basePay, overtimePay, grossPay, netPay };
 }
 
